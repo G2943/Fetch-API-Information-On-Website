@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Data Fetch</title>
+  </head>
+  <body>
+    <div class="jokeCategory">
+      <h1>Here is data category: <% if(locals.data){ %></h1>
+      <h2>Joke for you on: <%= data.category %></h2>
+      
+      <h3><%= data.setup %> <%= data.delivery %></h3>
+
+      <% } %>
+    </div>
+  </body>
+</html>
